@@ -515,7 +515,6 @@ MIT. See `LICENSE`.
 <img width="1251" height="670" alt="Screenshot 2026-08-30 at 6 04 06 PM" src="https://github.com/user-attachments/assets/6219cc6e-7ed0-4afb-9071-680d8da4375c" />
 <img width="982" height="466" alt="Screenshot 2026-08-30 at 6 04 20 PM" src="https://github.com/user-attachments/assets/4bafd361-8236-433f-ba7a-94a7ef1fe733" />
 <img width="983" height="672" alt="Screenshot 2026-08-30 at 6 04 33 PM" src="https://github.com/user-attachments/assets/bdbf3770-5580-45a8-92c0-1c2044765a3b" />
-<img width="499" height="439" alt="Screenshot 2026-08-30 at 6 04 42 PM" src="https://github.com/user-attachments/assets/77f95890-2b27-46a6-b323-7b0b5d9ebd3c" />
 <img width="1250" height="491" alt="Screenshot 2026-08-30 at 6 05 01 PM" src="https://github.com/user-attachments/assets/bb31a7e5-636e-4f86-b5ff-9da3de63145d" />
 <img width="988" height="429" alt="Screenshot 2026-08-30 at 6 05 09 PM" src="https://github.com/user-attachments/assets/ab5b05b7-d09e-4462-b0ca-bb126d12f4b8" />
 
