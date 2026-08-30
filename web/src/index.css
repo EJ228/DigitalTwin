@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-page text-ink antialiased;
+  margin: 0;
+  /* tabular figures so live metrics stop jittering as digits change */
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.011em;
+}
+
+/* Headings tighten as they grow -- large text set at body tracking reads loose,
+   which was a good part of what made the dashboard feel unfinished. */
+h1, h2, h3 {
+  letter-spacing: -0.021em;
+}
+
+@layer components {
+  /* The uppercase mono micro-label used throughout the design. */
+  .label {
+    @apply font-mono text-[10px] uppercase tracking-label text-ink-faint;
+    font-feature-settings: "tnum" 1;
+  }
+  .card {
+    @apply bg-card rounded-xl shadow-card ring-1 ring-black/[0.04];
+  }
+  /* Big live figures: mono, tight, optically aligned with their unit. */
+  .figure {
+    @apply font-mono leading-none;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+  /* Sentence-case explanatory copy where a .label would otherwise shout. */
+  .prose-note {
+    @apply font-sans text-[12.5px] normal-case tracking-normal text-ink-muted leading-relaxed;
+  }
+}
+
+/* Native selects render with their own font stack; match the label treatment. */
+select.label {
+  font-family: theme("fontFamily.mono");
+}

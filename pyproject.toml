@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digitaltwin-ai"
+version = "0.3.0"
+description = "A live digital twin of a vehicle assembly line: shifting-bottleneck detection and pre-defect drift detection from timestamps alone."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Aditya Garg"},
+    {name = "Charvit Rajani"},
+    {name = "Eklavya Jain"},
+]
+keywords = ["digital-twin", "manufacturing", "bottleneck-detection", "spc", "discrete-event-simulation"]
+dependencies = [
+    "simpy>=4.1,<5",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools]
+packages = ["dtwin"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: runs the simulator; a few seconds each",
+]

@@ -1,0 +1,1470 @@
+{
+  "meta": {
+    "wall_seconds": 237.26194071769714,
+    "eval_seeds": [
+      7,
+      21,
+      22,
+      23
+    ],
+    "calib_seeds": [
+      11,
+      12
+    ],
+    "tune_seeds": [
+      31,
+      32
+    ],
+    "shifts": 3.0
+  },
+  "flow": {
+    "per_run": [
+      {
+        "run": "data/run_s7",
+        "detector": "bottleneck_walk",
+        "detected": 0.9,
+        "hold_hit": 0.66709130168069,
+        "median_lag_s": 1518.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "active_period",
+        "detected": 0.7,
+        "hold_hit": 0.41159864204183816,
+        "median_lag_s": 1980.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "utilisation_30min",
+        "detected": 0.4,
+        "hold_hit": 0.13063689217628033,
+        "median_lag_s": 2478.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "queue_length",
+        "detected": 0.1,
+        "hold_hit": 0.09174311926605505,
+        "median_lag_s": 1326.0000000000036
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "bottleneck_walk",
+        "detected": 1.0,
+        "hold_hit": 0.5693438188665739,
+        "median_lag_s": 1992.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "active_period",
+        "detected": 0.7,
+        "hold_hit": 0.4066434680603339,
+        "median_lag_s": 1560.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "utilisation_30min",
+        "detected": 0.5,
+        "hold_hit": 0.23396804988846162,
+        "median_lag_s": 2460.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "queue_length",
+        "detected": 0.3,
+        "hold_hit": 0.13167295597484277,
+        "median_lag_s": 1950.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "bottleneck_walk",
+        "detected": 0.9,
+        "hold_hit": 0.5923991028753959,
+        "median_lag_s": 1776.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "active_period",
+        "detected": 0.6,
+        "hold_hit": 0.35818416432330474,
+        "median_lag_s": 1227.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "utilisation_30min",
+        "detected": 0.5,
+        "hold_hit": 0.2689177494484303,
+        "median_lag_s": 1728.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "queue_length",
+        "detected": 0.3,
+        "hold_hit": 0.11506517889242487,
+        "median_lag_s": 1626.0000000000036
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "bottleneck_walk",
+        "detected": 1.0,
+        "hold_hit": 0.619152597061494,
+        "median_lag_s": 2004.0
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "active_period",
+        "detected": 0.9,
+        "hold_hit": 0.35771068956168234,
+        "median_lag_s": 3162.0
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "utilisation_30min",
+        "detected": 0.5,
+        "hold_hit": 0.16640919017994632,
+        "median_lag_s": 2496.0
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "queue_length",
+        "detected": 0.2,
+        "hold_hit": 0.09278749062373781,
+        "median_lag_s": 1863.0000000000018
+      }
+    ],
+    "summary": {
+      "bottleneck_walk": {
+        "detection_rate": 0.95,
+        "hold_hit_rate": 0.612,
+        "hold_hit_sd": 0.042,
+        "median_lag_s": 1822.5
+      },
+      "active_period": {
+        "detection_rate": 0.725,
+        "hold_hit_rate": 0.3835,
+        "hold_hit_sd": 0.0296,
+        "median_lag_s": 1982.25
+      },
+      "utilisation_30min": {
+        "detection_rate": 0.475,
+        "hold_hit_rate": 0.2,
+        "hold_hit_sd": 0.0628,
+        "median_lag_s": 2290.5
+      },
+      "queue_length": {
+        "detection_rate": 0.225,
+        "hold_hit_rate": 0.1078,
+        "hold_hit_sd": 0.0192,
+        "median_lag_s": 1691.25
+      }
+    },
+    "n_episodes": 40
+  },
+  "quality": {
+    "thresholds": {
+      "univariate_cusum": 39.99999998183921,
+      "hotelling_t2": 22.384825472254306,
+      "mewma": 26.378303133882582,
+      "mcusum": 79.99999996321276,
+      "t2_cusum": 8.919890963239595
+    },
+    "target_arl0_parts": 1200,
+    "per_run": [
+      {
+        "run": "data/run_s7",
+        "detector": "spec_limits",
+        "escape": 245.0,
+        "arl1": 245.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "univariate_cusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "hotelling_t2",
+        "escape": 21.0,
+        "arl1": 21.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "mewma",
+        "escape": 33.0,
+        "arl1": 33.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "mcusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "t2_cusum",
+        "escape": 25.0,
+        "arl1": 25.0
+      },
+      {
+        "run": "data/run_s7",
+        "detector": "end_of_line_inspection",
+        "escape": 82.0,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "spec_limits",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "univariate_cusum",
+        "escape": 30.0,
+        "arl1": 30.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "hotelling_t2",
+        "escape": 7.0,
+        "arl1": 7.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "mewma",
+        "escape": 1.0,
+        "arl1": 1.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "mcusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "t2_cusum",
+        "escape": 9.0,
+        "arl1": 9.0
+      },
+      {
+        "run": "data/run_s21",
+        "detector": "end_of_line_inspection",
+        "escape": 76.0,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "spec_limits",
+        "escape": 332.0,
+        "arl1": 331.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "univariate_cusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "hotelling_t2",
+        "escape": 39.0,
+        "arl1": 38.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "mewma",
+        "escape": 51.0,
+        "arl1": 50.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "mcusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "t2_cusum",
+        "escape": 34.0,
+        "arl1": 33.0
+      },
+      {
+        "run": "data/run_s22",
+        "detector": "end_of_line_inspection",
+        "escape": 86.0,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "spec_limits",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "univariate_cusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "hotelling_t2",
+        "escape": 16.0,
+        "arl1": 16.0
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "mewma",
+        "escape": 31.0,
+        "arl1": 31.0
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "mcusum",
+        "escape": null,
+        "arl1": null
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "t2_cusum",
+        "escape": 24.0,
+        "arl1": 24.0
+      },
+      {
+        "run": "data/run_s23",
+        "detector": "end_of_line_inspection",
+        "escape": 89.0,
+        "arl1": null
+      }
+    ],
+    "summary": {
+      "end_of_line_inspection": {
+        "runs": 4,
+        "detected": 4,
+        "mean_escape": 83.25,
+        "median_escape": 84.0,
+        "worst_escape": 89.0
+      },
+      "hotelling_t2": {
+        "runs": 4,
+        "detected": 4,
+        "mean_escape": 20.75,
+        "median_escape": 18.5,
+        "worst_escape": 39.0
+      },
+      "mcusum": {
+        "runs": 4,
+        "detected": 0,
+        "mean_escape": NaN,
+        "median_escape": NaN,
+        "worst_escape": NaN
+      },
+      "mewma": {
+        "runs": 4,
+        "detected": 4,
+        "mean_escape": 29.0,
+        "median_escape": 32.0,
+        "worst_escape": 51.0
+      },
+      "spec_limits": {
+        "runs": 4,
+        "detected": 2,
+        "mean_escape": 288.5,
+        "median_escape": 288.5,
+        "worst_escape": 332.0
+      },
+      "t2_cusum": {
+        "runs": 4,
+        "detected": 4,
+        "mean_escape": 23.0,
+        "median_escape": 24.5,
+        "worst_escape": 34.0
+      },
+      "univariate_cusum": {
+        "runs": 4,
+        "detected": 1,
+        "mean_escape": 30.0,
+        "median_escape": 30.0,
+        "worst_escape": 30.0
+      }
+    }
+  },
+  "engines": {
+    "hazard": {
+      "station": "S08",
+      "trained_on": [
+        "run_s21",
+        "run_s22",
+        "run_s23"
+      ],
+      "tested_on": "run_s7",
+      "n_train": 4707,
+      "n_test": 1569,
+      "n_features": 64,
+      "positive_rate": 0.0516,
+      "mcc": 0.5607,
+      "auc": 0.839,
+      "average_precision": 0.5557,
+      "baselines": {
+        "predict_all_good_accuracy": 0.9484,
+        "predict_all_good_mcc": 0.0,
+        "random_at_base_rate_mcc": 0.0
+      },
+      "leak_check": {
+        "downstream_stations": 27,
+        "features_referencing_downstream": [],
+        "clean": true
+      },
+      "top_features": [
+        {
+          "feature": "s08_gap_diff_abs",
+          "importance": 0.77908,
+          "method": "shap"
+        },
+        {
+          "feature": "s04_clamp_force_N",
+          "importance": 0.34095,
+          "method": "shap"
+        },
+        {
+          "feature": "s05_gap_right_mm",
+          "importance": 0.30638,
+          "method": "shap"
+        },
+        {
+          "feature": "dwell_S07",
+          "importance": 0.20266,
+          "method": "shap"
+        },
+        {
+          "feature": "s04_electrode_wear_pct",
+          "importance": 0.18299,
+          "method": "shap"
+        },
+        {
+          "feature": "dwell_S05",
+          "importance": 0.18196,
+          "method": "shap"
+        },
+        {
+          "feature": "s01_gap_left_mm",
+          "importance": 0.17845,
+          "method": "shap"
+        },
+        {
+          "feature": "dwell_S01",
+          "importance": 0.17482,
+          "method": "shap"
+        }
+      ]
+    },
+    "coherence": {
+      "available": true,
+      "tolerance": 0.1,
+      "mean_abs_error": 0.0901,
+      "worst_abs_error": 0.5634,
+      "n_windows": 275,
+      "n_breaches": 96,
+      "breach_rate": 0.3491,
+      "coherent": true,
+      "verdict": "Twin is coherent with the line."
+    },
+    "blind": {
+      "stations": [
+        {
+          "station": "S01",
+          "tier": "rich",
+          "rmse": 2.875,
+          "naive_rmse": 1.358,
+          "skill": -1.118,
+          "posterior_sd": 1.105,
+          "coverage_95": 0.863,
+          "neighbours": [
+            "S02",
+            "S03",
+            "S04"
+          ]
+        },
+        {
+          "station": "S02",
+          "tier": "rich",
+          "rmse": 2.286,
+          "naive_rmse": 2.232,
+          "skill": -0.024,
+          "posterior_sd": 1.724,
+          "coverage_95": 0.934,
+          "neighbours": [
+            "S01",
+            "S03",
+            "S04",
+            "S05"
+          ]
+        },
+        {
+          "station": "S03",
+          "tier": "sparse",
+          "rmse": 2.637,
+          "naive_rmse": 3.078,
+          "skill": 0.143,
+          "posterior_sd": 2.297,
+          "coverage_95": 0.925,
+          "neighbours": [
+            "S01",
+            "S02",
+            "S04",
+            "S05",
+            "S06"
+          ]
+        },
+        {
+          "station": "S04",
+          "tier": "rich",
+          "rmse": 3.048,
+          "naive_rmse": 2.577,
+          "skill": -0.183,
+          "posterior_sd": 1.936,
+          "coverage_95": 0.932,
+          "neighbours": [
+            "S01",
+            "S02",
+            "S03",
+            "S05",
+            "S06",
+            "S07"
+          ]
+        },
+        {
+          "station": "S05",
+          "tier": "rich",
+          "rmse": 2.069,
+          "naive_rmse": 2.247,
+          "skill": 0.079,
+          "posterior_sd": 1.168,
+          "coverage_95": 0.825,
+          "neighbours": [
+            "S02",
+            "S03",
+            "S04",
+            "S06",
+            "S07",
+            "S08"
+          ]
+        },
+        {
+          "station": "S06",
+          "tier": "rich",
+          "rmse": 2.468,
+          "naive_rmse": 1.431,
+          "skill": -0.725,
+          "posterior_sd": 1.64,
+          "coverage_95": 0.908,
+          "neighbours": [
+            "S03",
+            "S04",
+            "S05",
+            "S07",
+            "S08",
+            "S09"
+          ]
+        },
+        {
+          "station": "S07",
+          "tier": "sparse",
+          "rmse": 1.223,
+          "naive_rmse": 1.17,
+          "skill": -0.045,
+          "posterior_sd": 1.05,
+          "coverage_95": 0.891,
+          "neighbours": [
+            "S04",
+            "S05",
+            "S06",
+            "S08",
+            "S09",
+            "S10"
+          ]
+        },
+        {
+          "station": "S08",
+          "tier": "rich",
+          "rmse": 1.445,
+          "naive_rmse": 1.175,
+          "skill": -0.23,
+          "posterior_sd": 1.201,
+          "coverage_95": 0.876,
+          "neighbours": [
+            "S05",
+            "S06",
+            "S07",
+            "S09",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "station": "S09",
+          "tier": "blind",
+          "rmse": 1.713,
+          "naive_rmse": 1.422,
+          "skill": -0.205,
+          "posterior_sd": 1.355,
+          "coverage_95": 0.891,
+          "neighbours": [
+            "S06",
+            "S07",
+            "S08",
+            "S10",
+            "S11",
+            "S12"
+          ]
+        },
+        {
+          "station": "S10",
+          "tier": "rich",
+          "rmse": 1.403,
+          "naive_rmse": 1.461,
+          "skill": 0.04,
+          "posterior_sd": 1.346,
+          "coverage_95": 0.944,
+          "neighbours": [
+            "S07",
+            "S08",
+            "S09",
+            "S11",
+            "S12",
+            "S13"
+          ]
+        },
+        {
+          "station": "S11",
+          "tier": "rich",
+          "rmse": 1.867,
+          "naive_rmse": 2.101,
+          "skill": 0.111,
+          "posterior_sd": 1.478,
+          "coverage_95": 0.888,
+          "neighbours": [
+            "S08",
+            "S09",
+            "S10",
+            "S12",
+            "S13",
+            "S14"
+          ]
+        },
+        {
+          "station": "S12",
+          "tier": "sparse",
+          "rmse": 1.625,
+          "naive_rmse": 1.634,
+          "skill": 0.006,
+          "posterior_sd": 1.832,
+          "coverage_95": 0.948,
+          "neighbours": [
+            "S09",
+            "S10",
+            "S11",
+            "S13",
+            "S14",
+            "S15"
+          ]
+        },
+        {
+          "station": "S13",
+          "tier": "rich",
+          "rmse": 3.379,
+          "naive_rmse": 2.966,
+          "skill": -0.139,
+          "posterior_sd": 1.806,
+          "coverage_95": 0.839,
+          "neighbours": [
+            "S10",
+            "S11",
+            "S12",
+            "S14",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "station": "S14",
+          "tier": "rich",
+          "rmse": 5.209,
+          "naive_rmse": 5.121,
+          "skill": -0.017,
+          "posterior_sd": 2.526,
+          "coverage_95": 0.918,
+          "neighbours": [
+            "S11",
+            "S12",
+            "S13",
+            "S15",
+            "S16",
+            "S17"
+          ]
+        },
+        {
+          "station": "S15",
+          "tier": "sparse",
+          "rmse": 7.452,
+          "naive_rmse": 6.87,
+          "skill": -0.085,
+          "posterior_sd": 2.392,
+          "coverage_95": 0.886,
+          "neighbours": [
+            "S12",
+            "S13",
+            "S14",
+            "S16",
+            "S17",
+            "S18"
+          ]
+        },
+        {
+          "station": "S16",
+          "tier": "rich",
+          "rmse": 3.923,
+          "naive_rmse": 3.672,
+          "skill": -0.068,
+          "posterior_sd": 3.209,
+          "coverage_95": 0.871,
+          "neighbours": [
+            "S13",
+            "S14",
+            "S15",
+            "S17",
+            "S18",
+            "S19"
+          ]
+        },
+        {
+          "station": "S17",
+          "tier": "rich",
+          "rmse": 7.257,
+          "naive_rmse": 7.18,
+          "skill": -0.011,
+          "posterior_sd": 1.8,
+          "coverage_95": 0.645,
+          "neighbours": [
+            "S14",
+            "S15",
+            "S16",
+            "S18",
+            "S19",
+            "S20"
+          ]
+        },
+        {
+          "station": "S18",
+          "tier": "blind",
+          "rmse": 7.475,
+          "naive_rmse": 7.742,
+          "skill": 0.034,
+          "posterior_sd": 2.1,
+          "coverage_95": 0.56,
+          "neighbours": [
+            "S15",
+            "S16",
+            "S17",
+            "S19",
+            "S20",
+            "S21"
+          ]
+        },
+        {
+          "station": "S19",
+          "tier": "rich",
+          "rmse": 6.598,
+          "naive_rmse": 6.554,
+          "skill": -0.007,
+          "posterior_sd": 2.358,
+          "coverage_95": 0.648,
+          "neighbours": [
+            "S16",
+            "S17",
+            "S18",
+            "S20",
+            "S21",
+            "S22"
+          ]
+        },
+        {
+          "station": "S20",
+          "tier": "rich",
+          "rmse": 2.231,
+          "naive_rmse": 2.805,
+          "skill": 0.205,
+          "posterior_sd": 2.649,
+          "coverage_95": 0.858,
+          "neighbours": [
+            "S17",
+            "S18",
+            "S19",
+            "S21",
+            "S22",
+            "S23"
+          ]
+        },
+        {
+          "station": "S21",
+          "tier": "sparse",
+          "rmse": 1.742,
+          "naive_rmse": 2.937,
+          "skill": 0.407,
+          "posterior_sd": 1.361,
+          "coverage_95": 0.917,
+          "neighbours": [
+            "S18",
+            "S19",
+            "S20",
+            "S22",
+            "S23",
+            "S24"
+          ]
+        },
+        {
+          "station": "S22",
+          "tier": "rich",
+          "rmse": 2.996,
+          "naive_rmse": 4.086,
+          "skill": 0.267,
+          "posterior_sd": 2.789,
+          "coverage_95": 0.908,
+          "neighbours": [
+            "S19",
+            "S20",
+            "S21",
+            "S23",
+            "S24",
+            "S25"
+          ]
+        },
+        {
+          "station": "S23",
+          "tier": "blind",
+          "rmse": 2.597,
+          "naive_rmse": 4.604,
+          "skill": 0.436,
+          "posterior_sd": 3.001,
+          "coverage_95": 0.969,
+          "neighbours": [
+            "S20",
+            "S21",
+            "S22",
+            "S24",
+            "S25",
+            "S26"
+          ]
+        },
+        {
+          "station": "S24",
+          "tier": "rich",
+          "rmse": 1.71,
+          "naive_rmse": 5.015,
+          "skill": 0.659,
+          "posterior_sd": 1.473,
+          "coverage_95": 0.936,
+          "neighbours": [
+            "S21",
+            "S22",
+            "S23",
+            "S25",
+            "S26",
+            "S27"
+          ]
+        },
+        {
+          "station": "S25",
+          "tier": "sparse",
+          "rmse": 1.565,
+          "naive_rmse": 5.291,
+          "skill": 0.704,
+          "posterior_sd": 1.593,
+          "coverage_95": 0.936,
+          "neighbours": [
+            "S22",
+            "S23",
+            "S24",
+            "S26",
+            "S27",
+            "S28"
+          ]
+        },
+        {
+          "station": "S26",
+          "tier": "blind",
+          "rmse": 4.56,
+          "naive_rmse": 5.691,
+          "skill": 0.199,
+          "posterior_sd": 1.484,
+          "coverage_95": 0.678,
+          "neighbours": [
+            "S23",
+            "S24",
+            "S25",
+            "S27",
+            "S28",
+            "S29"
+          ]
+        },
+        {
+          "station": "S27",
+          "tier": "rich",
+          "rmse": 6.775,
+          "naive_rmse": 3.867,
+          "skill": -0.752,
+          "posterior_sd": 1.59,
+          "coverage_95": 0.658,
+          "neighbours": [
+            "S24",
+            "S25",
+            "S26",
+            "S28",
+            "S29",
+            "S30"
+          ]
+        },
+        {
+          "station": "S28",
+          "tier": "rich",
+          "rmse": 1.768,
+          "naive_rmse": 2.797,
+          "skill": 0.368,
+          "posterior_sd": 1.673,
+          "coverage_95": 0.918,
+          "neighbours": [
+            "S25",
+            "S26",
+            "S27",
+            "S29",
+            "S30",
+            "S31"
+          ]
+        },
+        {
+          "station": "S29",
+          "tier": "rich",
+          "rmse": 2.141,
+          "naive_rmse": 2.978,
+          "skill": 0.281,
+          "posterior_sd": 1.625,
+          "coverage_95": 0.927,
+          "neighbours": [
+            "S26",
+            "S27",
+            "S28",
+            "S30",
+            "S31",
+            "S32"
+          ]
+        },
+        {
+          "station": "S30",
+          "tier": "blind",
+          "rmse": 2.122,
+          "naive_rmse": 2.131,
+          "skill": 0.004,
+          "posterior_sd": 1.606,
+          "coverage_95": 0.865,
+          "neighbours": [
+            "S27",
+            "S28",
+            "S29",
+            "S31",
+            "S32",
+            "S33"
+          ]
+        },
+        {
+          "station": "S31",
+          "tier": "rich",
+          "rmse": 1.741,
+          "naive_rmse": 1.746,
+          "skill": 0.002,
+          "posterior_sd": 1.432,
+          "coverage_95": 0.903,
+          "neighbours": [
+            "S28",
+            "S29",
+            "S30",
+            "S32",
+            "S33",
+            "S34"
+          ]
+        },
+        {
+          "station": "S32",
+          "tier": "sparse",
+          "rmse": 2.456,
+          "naive_rmse": 2.312,
+          "skill": -0.062,
+          "posterior_sd": 1.434,
+          "coverage_95": 0.807,
+          "neighbours": [
+            "S29",
+            "S30",
+            "S31",
+            "S33",
+            "S34",
+            "S35"
+          ]
+        },
+        {
+          "station": "S33",
+          "tier": "rich",
+          "rmse": 1.966,
+          "naive_rmse": 2.638,
+          "skill": 0.255,
+          "posterior_sd": 1.008,
+          "coverage_95": 0.745,
+          "neighbours": [
+            "S30",
+            "S31",
+            "S32",
+            "S34",
+            "S35"
+          ]
+        },
+        {
+          "station": "S34",
+          "tier": "blind",
+          "rmse": 1.802,
+          "naive_rmse": 2.504,
+          "skill": 0.28,
+          "posterior_sd": 1.707,
+          "coverage_95": 0.922,
+          "neighbours": [
+            "S31",
+            "S32",
+            "S33",
+            "S35"
+          ]
+        },
+        {
+          "station": "S35",
+          "tier": "rich",
+          "rmse": 1.724,
+          "naive_rmse": 2.478,
+          "skill": 0.304,
+          "posterior_sd": 1.688,
+          "coverage_95": 0.956,
+          "neighbours": [
+            "S32",
+            "S33",
+            "S34"
+          ]
+        }
+      ],
+      "ranking": [
+        {
+          "station": "S16",
+          "tier": "rich",
+          "posterior_sd": 3.209,
+          "eig_bits": 1.749,
+          "constraint_share": 0.1254,
+          "value": 0.30671,
+          "inference_skill": -0.068
+        },
+        {
+          "station": "S19",
+          "tier": "rich",
+          "posterior_sd": 2.358,
+          "eig_bits": 1.357,
+          "constraint_share": 0.0837,
+          "value": 0.18142,
+          "inference_skill": -0.007
+        },
+        {
+          "station": "S06",
+          "tier": "rich",
+          "posterior_sd": 1.64,
+          "eig_bits": 0.942,
+          "constraint_share": 0.1333,
+          "value": 0.17264,
+          "inference_skill": -0.725
+        },
+        {
+          "station": "S27",
+          "tier": "rich",
+          "posterior_sd": 1.59,
+          "eig_bits": 0.909,
+          "constraint_share": 0.1351,
+          "value": 0.16836,
+          "inference_skill": -0.752
+        },
+        {
+          "station": "S29",
+          "tier": "rich",
+          "posterior_sd": 1.625,
+          "eig_bits": 0.932,
+          "constraint_share": 0.1192,
+          "value": 0.1577,
+          "inference_skill": 0.281
+        },
+        {
+          "station": "S23",
+          "tier": "blind",
+          "posterior_sd": 3.001,
+          "eig_bits": 1.661,
+          "constraint_share": 0.0159,
+          "value": 0.10955,
+          "inference_skill": 0.436
+        },
+        {
+          "station": "S35",
+          "tier": "rich",
+          "posterior_sd": 1.688,
+          "eig_bits": 0.973,
+          "constraint_share": 0.0594,
+          "value": 0.10642,
+          "inference_skill": 0.304
+        },
+        {
+          "station": "S26",
+          "tier": "blind",
+          "posterior_sd": 1.484,
+          "eig_bits": 0.839,
+          "constraint_share": 0.0725,
+          "value": 0.1028,
+          "inference_skill": 0.199
+        },
+        {
+          "station": "S14",
+          "tier": "rich",
+          "posterior_sd": 2.526,
+          "eig_bits": 1.442,
+          "constraint_share": 0.0178,
+          "value": 0.0977,
+          "inference_skill": -0.017
+        },
+        {
+          "station": "S03",
+          "tier": "sparse",
+          "posterior_sd": 2.297,
+          "eig_bits": 1.325,
+          "constraint_share": 0.0236,
+          "value": 0.09744,
+          "inference_skill": 0.143
+        },
+        {
+          "station": "S01",
+          "tier": "rich",
+          "posterior_sd": 1.105,
+          "eig_bits": 0.576,
+          "constraint_share": 0.117,
+          "value": 0.09616,
+          "inference_skill": -1.118
+        },
+        {
+          "station": "S12",
+          "tier": "sparse",
+          "posterior_sd": 1.832,
+          "eig_bits": 1.062,
+          "constraint_share": 0.038,
+          "value": 0.09346,
+          "inference_skill": 0.006
+        },
+        {
+          "station": "S22",
+          "tier": "rich",
+          "posterior_sd": 2.789,
+          "eig_bits": 1.567,
+          "constraint_share": 0.0,
+          "value": 0.07835,
+          "inference_skill": 0.267
+        },
+        {
+          "station": "S20",
+          "tier": "rich",
+          "posterior_sd": 2.649,
+          "eig_bits": 1.501,
+          "constraint_share": 0.0,
+          "value": 0.07507,
+          "inference_skill": 0.205
+        },
+        {
+          "station": "S15",
+          "tier": "sparse",
+          "posterior_sd": 2.392,
+          "eig_bits": 1.374,
+          "constraint_share": 0.0,
+          "value": 0.06872,
+          "inference_skill": -0.085
+        },
+        {
+          "station": "S04",
+          "tier": "rich",
+          "posterior_sd": 1.936,
+          "eig_bits": 1.124,
+          "constraint_share": 0.0098,
+          "value": 0.06717,
+          "inference_skill": -0.183
+        },
+        {
+          "station": "S18",
+          "tier": "blind",
+          "posterior_sd": 2.1,
+          "eig_bits": 1.218,
+          "constraint_share": 0.0,
+          "value": 0.06088,
+          "inference_skill": 0.034
+        },
+        {
+          "station": "S13",
+          "tier": "rich",
+          "posterior_sd": 1.806,
+          "eig_bits": 1.046,
+          "constraint_share": 0.0,
+          "value": 0.05228,
+          "inference_skill": -0.139
+        },
+        {
+          "station": "S17",
+          "tier": "rich",
+          "posterior_sd": 1.8,
+          "eig_bits": 1.042,
+          "constraint_share": 0.0,
+          "value": 0.0521,
+          "inference_skill": -0.011
+        },
+        {
+          "station": "S34",
+          "tier": "blind",
+          "posterior_sd": 1.707,
+          "eig_bits": 0.984,
+          "constraint_share": 0.0025,
+          "value": 0.05172,
+          "inference_skill": 0.28
+        },
+        {
+          "station": "S25",
+          "tier": "sparse",
+          "posterior_sd": 1.593,
+          "eig_bits": 0.912,
+          "constraint_share": 0.0062,
+          "value": 0.05119,
+          "inference_skill": 0.704
+        },
+        {
+          "station": "S02",
+          "tier": "rich",
+          "posterior_sd": 1.724,
+          "eig_bits": 0.995,
+          "constraint_share": 0.0,
+          "value": 0.04976,
+          "inference_skill": -0.024
+        },
+        {
+          "station": "S28",
+          "tier": "rich",
+          "posterior_sd": 1.673,
+          "eig_bits": 0.963,
+          "constraint_share": 0.0007,
+          "value": 0.04882,
+          "inference_skill": 0.368
+        },
+        {
+          "station": "S30",
+          "tier": "blind",
+          "posterior_sd": 1.606,
+          "eig_bits": 0.92,
+          "constraint_share": 0.0,
+          "value": 0.04601,
+          "inference_skill": 0.004
+        },
+        {
+          "station": "S10",
+          "tier": "rich",
+          "posterior_sd": 1.346,
+          "eig_bits": 0.745,
+          "constraint_share": 0.0109,
+          "value": 0.04537,
+          "inference_skill": 0.04
+        },
+        {
+          "station": "S11",
+          "tier": "rich",
+          "posterior_sd": 1.478,
+          "eig_bits": 0.835,
+          "constraint_share": 0.0,
+          "value": 0.04177,
+          "inference_skill": 0.111
+        },
+        {
+          "station": "S24",
+          "tier": "rich",
+          "posterior_sd": 1.473,
+          "eig_bits": 0.832,
+          "constraint_share": 0.0,
+          "value": 0.0416,
+          "inference_skill": 0.659
+        },
+        {
+          "station": "S31",
+          "tier": "rich",
+          "posterior_sd": 1.432,
+          "eig_bits": 0.804,
+          "constraint_share": 0.0004,
+          "value": 0.04051,
+          "inference_skill": 0.002
+        },
+        {
+          "station": "S32",
+          "tier": "sparse",
+          "posterior_sd": 1.434,
+          "eig_bits": 0.806,
+          "constraint_share": 0.0,
+          "value": 0.0403,
+          "inference_skill": -0.062
+        },
+        {
+          "station": "S33",
+          "tier": "rich",
+          "posterior_sd": 1.008,
+          "eig_bits": 0.506,
+          "constraint_share": 0.0279,
+          "value": 0.03941,
+          "inference_skill": 0.255
+        },
+        {
+          "station": "S09",
+          "tier": "blind",
+          "posterior_sd": 1.355,
+          "eig_bits": 0.752,
+          "constraint_share": 0.0007,
+          "value": 0.03816,
+          "inference_skill": -0.205
+        },
+        {
+          "station": "S21",
+          "tier": "sparse",
+          "posterior_sd": 1.361,
+          "eig_bits": 0.756,
+          "constraint_share": 0.0,
+          "value": 0.03781,
+          "inference_skill": 0.407
+        },
+        {
+          "station": "S08",
+          "tier": "rich",
+          "posterior_sd": 1.201,
+          "eig_bits": 0.644,
+          "constraint_share": 0.0,
+          "value": 0.03221,
+          "inference_skill": -0.23
+        },
+        {
+          "station": "S05",
+          "tier": "rich",
+          "posterior_sd": 1.168,
+          "eig_bits": 0.621,
+          "constraint_share": 0.0,
+          "value": 0.03104,
+          "inference_skill": 0.079
+        },
+        {
+          "station": "S07",
+          "tier": "sparse",
+          "posterior_sd": 1.05,
+          "eig_bits": 0.536,
+          "constraint_share": 0.0,
+          "value": 0.02682,
+          "inference_skill": -0.045
+        }
+      ],
+      "median_skill": 0.006,
+      "n_with_positive_skill": 20,
+      "n_evaluated": 35,
+      "validation": "Every station is inferred from its neighbours with its own readings withheld, including stations we can see. That gives an honest error bar for the same procedure at a genuinely blind bay."
+    },
+    "conformal": {
+      "alpha": 0.0008333333333333334,
+      "nominal_false_alarms_per_1000": 0.833,
+      "threshold": 11.4508,
+      "calibration_n": 1162,
+      "finite_sample_exact": false,
+      "min_n_for_alpha": 1199,
+      "guarantee": "Calibration sample too small to certify this alpha exactly; threshold set at the observed maximum, which is conservative.",
+      "empirical_false_alarm_rate": 0.0,
+      "empirical_arl0_parts": null,
+      "within_guarantee": true,
+      "escape_window_parts": 21.8,
+      "runs_detected": "4/4",
+      "target_arl0_parts": 1200.0
+    },
+    "forecast": {
+      "horizons": [
+        {
+          "horizon_min": 2.0,
+          "lstm_rmse": 0.1506,
+          "persistence_rmse": 0.1814,
+          "linear_rmse": 0.1896,
+          "skill_vs_persistence": 0.1695,
+          "skill_vs_linear": 0.2054,
+          "beats_persistence": true
+        },
+        {
+          "horizon_min": 5.0,
+          "lstm_rmse": 0.1816,
+          "persistence_rmse": 0.1928,
+          "linear_rmse": 0.2271,
+          "skill_vs_persistence": 0.0578,
+          "skill_vs_linear": 0.2002,
+          "beats_persistence": true
+        },
+        {
+          "horizon_min": 10.0,
+          "lstm_rmse": 0.2261,
+          "persistence_rmse": 0.2299,
+          "linear_rmse": 0.3233,
+          "skill_vs_persistence": 0.0162,
+          "skill_vs_linear": 0.3004,
+          "beats_persistence": true
+        },
+        {
+          "horizon_min": 20.0,
+          "lstm_rmse": 0.2528,
+          "persistence_rmse": 0.2808,
+          "linear_rmse": 0.5238,
+          "skill_vs_persistence": 0.0996,
+          "skill_vs_linear": 0.5173,
+          "beats_persistence": true
+        }
+      ],
+      "beats_persistence_at": "4/4",
+      "lookback_min": 10.0,
+      "trained_on": [
+        "run_s21",
+        "run_s22",
+        "run_s23"
+      ],
+      "tested_on": "run_s7",
+      "note": "Persistence is a hard baseline for buffer levels, not a straw man: they are strongly autocorrelated over short horizons. The comparison is reported whichever way it comes out."
+    },
+    "graphsage": {
+      "task": "constraint at station in 10 minutes",
+      "trained_on": [
+        "run_s21",
+        "run_s22",
+        "run_s23"
+      ],
+      "tested_on": "run_s7",
+      "results": {
+        "graphsage": {
+          "auc": 0.9407,
+          "mcc": 0.5348
+        },
+        "no_aggregation": {
+          "auc": 0.9096,
+          "mcc": 0.3689
+        }
+      },
+      "delta_auc": 0.0311,
+      "delta_mcc": 0.1659,
+      "aggregation_helps": true,
+      "note": "The ablation is the same network with neighbour aggregation switched off: same features, depth, width and optimiser. An assembly line is close to a path graph, so a small or absent gain is a finding about lines, not a broken model."
+    }
+  }
+}

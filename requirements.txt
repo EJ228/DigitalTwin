@@ -1,0 +1,15 @@
+# Pinned to the versions this project was developed and verified against.
+# Nothing exotic: a DES engine, arrays, dataframes, a parquet writer.
+simpy>=4.1,<5
+numpy>=1.26
+pandas>=2.1
+pyarrow>=14.0
+
+# Hazard model, Gaussian process and attribution.
+scikit-learn>=1.3
+shap>=0.44
+
+# Dashboard backend. Not needed for run_all.py or the test suite -- only for
+# `make api`, which serves the React frontend in web/.
+fastapi>=0.110
+uvicorn[standard]>=0.29
