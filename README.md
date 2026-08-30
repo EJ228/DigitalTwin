@@ -8,7 +8,7 @@ A live digital twin of a mixed-model vehicle assembly line that finds the
 bottleneck while it is still moving, and catches a fixture drifting before the
 defect exists — both from the one signal every station emits: the timestamp of
 a part entering and leaving.
-
+<img width="1000" height="470" alt="Screenshot 2026-08-30 at 6 04 06 PM" src="https://github.com/user-attachments/assets/6219cc6e-7ed0-4afb-9071-680d8da4375c" />
 ## Headline results
 
 | | Baseline | This twin |
